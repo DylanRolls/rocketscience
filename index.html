@@ -1,156 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rocket Science</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rocket Science — Coming Soon</title>
+
+  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function() {
-      emailjs.init("4Nay5tc4PcpTV9k4Q");
-    })();
-  </script>
+
   <style>
-    .popup {
-      display: none;
-      position: fixed;
-      z-index: 1000;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      overflow: auto;
-      background-color: rgba(0,0,0,0.4);
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #0b0f14; /* deep space vibe */
+      color: #ffffff;
     }
-    .popup-content {
-      background-color: #fefefe;
-      margin: 15% auto;
+
+    .page-container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 60px 20px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: clamp(2.2rem, 6vw, 3.2rem);
+      margin: 0;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: clamp(1rem, 3vw, 1.2rem);
+      color: #b8c1cc;
+    }
+
+    main {
+      flex: 1;
+      display: grid;
+      place-items: center;
       padding: 20px;
-      border: 1px solid #888;
-      width: 80%;
-      max-width: 500px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
-    .close {
-      color: #aaa;
-      float: right;
-      font-size: 28px;
-      font-weight: bold;
-      cursor: pointer;
+
+    .card {
+      width: min(700px, 92vw);
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 40px 28px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
     }
-    .close:hover,
-    .close:focus {
-      color: #000;
-      text-decoration: none;
-      cursor: pointer;
+
+    .card h2 {
+      font-size: clamp(1.8rem, 5vw, 2.4rem);
+      margin: 0 0 12px;
     }
-    #contactForm input,
-    #contactForm textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      box-sizing: border-box;
+
+    .card p {
+      font-size: clamp(1rem, 3vw, 1.15rem);
+      color: #d6dde6;
+      line-height: 1.6;
+      margin: 0 auto 22px;
+      max-width: 560px;
     }
-    #contactForm textarea {
-      height: 100px;
-      resize: vertical;
+
+    .badge {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(49, 112, 55, 0.15);
+      border: 1px solid rgba(49, 112, 55, 0.5);
+      color: #8fe39a;
+      font-weight: 700;
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+      margin-bottom: 18px;
     }
-    #contactForm button {
-      background-color: #317037;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 16px;
-      transition: background-color 0.3s;
-    }
-    #contactForm button:hover {
-      background-color: #3c8b44;
+
+    footer {
+      text-align: center;
+      padding: 18px 12px 30px;
+      color: #8b95a3;
+      font-size: 0.95rem;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      background: rgba(255,255,255,0.02);
     }
   </style>
 </head>
 <body>
   <div class="page-container">
-    <div class="content-wrap">
-      <header>
-        <div class="container">
-          <h1>Rocket Science</h1>
-          <p>Ready For liftoff?</p>
-        </div>
-      </header>
+    <header>
+      <h1>Rocket Science</h1>
+      <p>Ready for liftoff?</p>
+    </header>
 
-      <main>
-        <section class="intro">
-          <div class="container">
-            <h2>Explore Our Farms</h2>
-            <p>We proudly represent the following farms:</p>
-         <div class="farm-buttons">
-    <button onclick="location.href='54green.html'">54 Green Acres</button>
-    
-    <button onclick="location.href='savageSkunk.html'">Savage Skunk</button>
-    <button onclick="location.href='sungod.html'">Sun God Medicinals</button>
-    <button onclick="openContactForm()">Let's Talk</button>
-</div>
-          </div>
-        </section>
-      </main>
-    </div>
+    <main>
+      <section class="card">
+        <div class="badge">COMING SOON</div>
+        <h2>We’re building something new.</h2>
+        <p>
+          Rocket Science is gearing up for launch.  
+          We’ll be showcasing our partner farms and consultancy services here very soon.
+        </p>
+        <p>
+          Check back shortly — the countdown has started.
+        </p>
+      </section>
+    </main>
 
     <footer>
-      <div class="container">
-        <p><strong>Looking to start a processing project? Struggling with a particular product SKU? Want to innovate and update your SOPs? Hit 'Let's Talk" above to access our consultancy services.</strong></p>
-        <p>&copy; 2024 Rocket Science. All rights reserved.</p>
-      </div>
+      <p><strong>
+        Looking to start a processing project? Struggling with a particular product SKU?
+        Want to innovate and update your SOPs?
+      </strong></p>
+      <p>We’ll be opening our consultancy intake soon.</p>
+      <p>&copy; 2024 Rocket Science. All rights reserved.</p>
     </footer>
   </div>
-
-  <!-- Contact Form Popup -->
-  <div id="contactFormPopup" class="popup">
-    <div class="popup-content">
-      <span class="close" onclick="closeContactForm()">&times;</span>
-      <h2>Contact Us</h2>
-      <form id="contactForm">
-        <input type="text" id="name" placeholder="Your Name" required>
-        <input type="email" id="email" placeholder="Your Email" required>
-        <textarea id="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </div>
-  </div>
-<script>
-  function openContactForm() {
-    document.getElementById('contactFormPopup').style.display = 'block';
-  }
-
-  function closeContactForm() {
-    document.getElementById('contactFormPopup').style.display = 'none';
-  }
-
-  document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    var templateParams = {
-      from_name: document.getElementById('name').value,
-      from_email: document.getElementById('email').value,
-      message: document.getElementById('message').value
-    };
-
-    emailjs.send("service_k67bf2e", "template_stj9lq2", templateParams, "4Nay5tc4PcpTV9k4Q")
-      .then(function(response) {
-        console.log('SUCCESS!', response.status, response.text);
-        alert('Message sent successfully!');
-        closeContactForm();
-      }, function(error) {
-        console.log('FAILED...', error);
-        alert('Failed to send message. Please try again.');
-      });
-  });
-</script>
 </body>
 </html>
